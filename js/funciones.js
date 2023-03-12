@@ -1,19 +1,31 @@
+document.getElementById ("ancla_informacion_personal").onclick = function() {
+    document.getElementById ("informacion_personal").style.display = "grid";
+    document.getElementById ("experiencia").style.display = "none";
+    document.getElementById ("habilidades").style.display = "none";
+    document.getElementById ("contacto").style.display = "none";
+}
+
+document.getElementById ("ancla_experiencia").onclick = function() {
+    document.getElementById ("informacion_personal").style.display = "none";
+    document.getElementById ("experiencia").style.display = "grid";
+    document.getElementById ("habilidades").style.display = "none";
+    document.getElementById ("contacto").style.display = "none";
+}
+
+document.getElementById ("ancla_habilidades").onclick = function() {
+    document.getElementById ("informacion_personal").style.display = "none";
+    document.getElementById ("experiencia").style.display = "none";
+    document.getElementById ("habilidades").style.display = "grid";
+    document.getElementById ("contacto").style.display = "none";
+}
+
 document.getElementById ("ancla_contacto").onclick = function() {
+    document.getElementById ("informacion_personal").style.display = "none";
+    document.getElementById ("experiencia").style.display = "none";
+    document.getElementById ("habilidades").style.display = "none";
     document.getElementById ("contacto").style.display = "grid";
 }
 
-document.getElementById("enviar").onclick = function() {
-    let nombre = "null"; let correo = "null" ; let telefono = "null"
-    nombre = document.getElementsByName("nombre_empresa").valor;
-    correo = document.getElementsByName("correo").valor;
-    telefono = document.getElementsByName("telefono").valor;
-    if(nombre != "null" && correo != "null" || telefono != "null") {
-        document.getElementById("mensaje").textContent = "Sus datos de Contacto fueron eviados correctamente. Me comunicaré por uno de los medios indicados. Gracias."+nombre+correo+telefono;
-        document.getElementById("mensaje").style.display = "block"
-    }else {
-        document.getElementById("mensaje").textContent ="Es necesario completar Nombre o Razón Social y un correo o Teléfono para contactarme. Inténtelo Nuevamente, por favor."+nombre+correo+telefono;
-        document.getElementById("mensaje").style.display = "block"
-    }
-    
+document.getElementById ("enviar").onclick = function() {
+    document.getElementById ("mensaje_enviar_correcto").style.display = "block";
 }
-

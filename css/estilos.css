@@ -6,10 +6,12 @@ body {
 }
 
 header {
-    height: 250px;
+    height: 200px;
     display: flex;
     columns: 1fr 1fr 2fr;
+    justify-content: space-between;
     background-color: lightgrey;
+    border-radius: 0%;
     padding: 25px;
     margin: 15px;
 }
@@ -22,18 +24,12 @@ header {
 section {
     padding: 25px;
     margin: 15px;
-    border;
+    border-radius: 10px;
 }
-
-#imagen {
-    width: 150; height: 2000;
-   
-}
-
 
 
 .barra_de_botones {
-    width: 500px;
+    width: 600px;
     height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -42,9 +38,16 @@ section {
 
 .link_ancla {
     margin: 5px;
-    padding: 5px;
-    border-radius: 0%;
-    border-color: blue;
+    padding: 20%;
+    border-radius: 50%;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(255, 213, 0);
+    color: rgb(63, 57, 57);
+    text-decoration: none;
+    text-align: center;
+    font-size: 100% ;
+
 }
 
 #lista_informacion_personal > li {
@@ -56,10 +59,10 @@ ul {
 }
 
 .contenedor {
-    height: 300px;
+    height: 250px;
     width: 600px;
-    display: grid;
-    /*grid-template-columns: 25% 75%;*/
+    display: none;
+    grid-template-columns: 25% 75%;
     border-color: blue;
     border-style: solid;
     border: 2px;
@@ -69,26 +72,34 @@ ul {
 .contenedor_formulario {
     height: 500px;
     display: none ;
+    grid-template-rows: 15% 65% 20%;
+    background-color: blanchedalmond;
 }
 
 .formulario {
-    height: 300px;
+    height: 250px;
     width: 600px;
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
     display: grid;
     grid-template-rows: 30% 30% 30% 10%;
     background-color: aquamarine;
     table-layout: auto;
     line-height: 15px;
     box-sizing: 500px 250px;
+    border-radius: 5%;
 }
 
 .formulario > li {
     list-style: none;
 }
 
-
+#mensaje_enviar_correcto {
+    display: none;
+}
 
 footer {
     background-color: lightgray;
+    height: 70px;
+    padding: 15px;
+    margin: 15px;
 }
